@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/pink"
     android:orientation="vertical"
     tools:context=".LoginPage">
 
@@ -29,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:text="Login"
                 android:textSize="36sp"
-                android:textStyle="bold,italic"
+                android:textStyle="bold"
                 android:textAlignment="center"
                 android:textColor="@color/black">
             </TextView>
