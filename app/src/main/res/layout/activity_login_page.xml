@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:orientation="vertical"
+    tools:context=".LoginPage">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        android:background="@drawable/shapecustom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="36sp"
+                android:textStyle="bold,italic"
+                android:textAlignment="center"
+                android:textColor="@color/black">
+            </TextView>
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="45dp"
+                android:hint="Ali bin Abu"
+                android:padding="10dp"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:background="@drawable/shapecustom">
+            </EditText>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="25dp"
+                android:hint="12345678"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:background="@drawable/shapecustom">
+            </EditText>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="35dp"
+                android:text="Login"
+                android:textSize="18sp"
+                android:backgroundTint="#292726"
+                app:cornerRadius="30dp">
+            </Button>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:padding="8dp"
+        android:text="Not yet register? Sign Up Now."
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+</LinearLayout>
